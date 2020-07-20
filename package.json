@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit" :"git add . & git cz",
-    "changelog":"conventional-changelog -p angular -i CHANGELOG.md -s -r -0"
+    "commit": "git add . & git cz",
+    "lint":"eslint src/**/*.js --fix",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r -0"
   },
   "keywords": [],
   "author": "linchengdong <chengdong2518@163.com> (https://github.com/chengdonglin)",
@@ -15,6 +16,9 @@
     "commitizen": "^4.1.2",
     "conventional-changelog-cli": "^2.0.34",
     "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "rimraf": "^3.0.2"
   },
   "config": {
