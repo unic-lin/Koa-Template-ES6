@@ -1,0 +1,25 @@
+{
+  "name": "node-common-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit" :"git add . & git cz",
+    "changelog":"conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+  },
+  "keywords": [],
+  "author": "linchengdong <chengdong2518@163.com> (https://github.com/chengdonglin)",
+  "license": "ISC",
+  "devDependencies": {
+    "commitizen": "^4.1.2",
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0",
+    "rimraf": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
