@@ -6,6 +6,7 @@
 * eslint 代码 规范检查 8ada341
 * git change log f552bda
 * git 提交规范 99a7201
+* jest 单元测试 acd841a
 
 
 

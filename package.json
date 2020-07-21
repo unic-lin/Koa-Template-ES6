@@ -7,20 +7,38 @@
     "test": "jest --coverage",
     "commit": "git add . & git cz",
     "lint": "eslint src/**/*.js --fix",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r -0"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r -0",
+    "start": "node scripts/dev.js",
+    "build": "node scripts/pro.js",
+    "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect ./src/index.js",
+    "clean": "rimraf dist",
+    "run:prod": "node ./dist/server.bundle.js"
   },
   "keywords": [],
   "author": "linchengdong <chengdong2518@163.com> (https://github.com/chengdonglin)",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "bable-loader": "0.0.1-security",
+    "clean-webpack-plugin": "^3.0.0",
     "commitizen": "^4.1.2",
     "conventional-changelog-cli": "^2.0.34",
+    "cross-env": "^7.0.2",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "jest": "^26.1.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4",
+    "terser-webpack-plugin": "^3.0.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.0.9",
+    "webpack-node-externals": "^2.5.0"
   },
   "config": {
     "commitizen": {
