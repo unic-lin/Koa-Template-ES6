@@ -13,7 +13,7 @@
     "build": "node scripts/pro.js",
     "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node --inspect ./src/index.js",
     "clean": "rimraf dist",
-    "run:prod": "node ./dist/server.bundle.js"
+    "run:prod": "pm2 start  ./dist/server.bundle.js"
   },
   "keywords": [],
   "author": "<%=author%>",
