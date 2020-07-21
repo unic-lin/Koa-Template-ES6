@@ -1,4 +1,4 @@
-# 1.0.0 (2020-07-20)
+# 1.0.0 (2020-07-21)
 
 
 ### Features
@@ -7,6 +7,7 @@
 * git change log f552bda
 * git 提交规范 99a7201
 * jest 单元测试 acd841a
+* webpack 环境打包 a9e16c7
 
 
 

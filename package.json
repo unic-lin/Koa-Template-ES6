@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private":"<%=private%>",
   "scripts": {
     "test": "jest --coverage",
     "commit": "git add . & git cz",
@@ -15,8 +16,8 @@
     "run:prod": "node ./dist/server.bundle.js"
   },
   "keywords": [],
-  "author": "linchengdong <chengdong2518@163.com> (https://github.com/chengdonglin)",
-  "license": "ISC",
+  "author": "<%=author%>",
+  "license":"<%=license%>",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/node": "^7.10.5",
